@@ -14,7 +14,7 @@ public class Solution2 {
     /* Utility function that puts all non-positive 
 	(0 and negative) numbers on left side of 
 	arr[] and return count of such numbers */
-    public static int segregate(int arr[], int size) {
+    static int segregate(int arr[], int size) {
         int j = 0, i;
         for (i = 0; i < size; i++) {
             if (arr[i] <= 0) {
@@ -34,7 +34,7 @@ public class Solution2 {
     /* Find the smallest positive missing 
 	number in an array that contains 
 	all positive integers */
-    public static int findMissingPositive(int arr[], int size) {
+    static int findMissingPositive(int arr[], int size) {
         int i;
 
         // Mark arr[i] as visited by making 
