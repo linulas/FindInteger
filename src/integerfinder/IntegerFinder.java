@@ -1,4 +1,6 @@
-﻿/*
+package integerfinder;
+
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -21,7 +23,6 @@
 *
 * N is an integer within the range [1..100,000]; each element of array A is an integer within the range [−1,000,000..1,000,000].
 */
-package integerfinder;
 
 /**
  *
@@ -35,7 +36,7 @@ public class IntegerFinder {
     public static void main(String[] args) {
         // Initialize soulutions
 		Solution1 sol1 = new Solution1();
-		Solution2 sol2 = new SOlution2();
+		Solution2 sol2 = new Solution2();
 		Solution3 sol3 = new Solution3();
 
 		// Test inputs
@@ -43,14 +44,37 @@ public class IntegerFinder {
 		int[] arr2 = { 2, 3, -7, 6, 8, 1, -10, 15 }; // Output 4
 		int[] arr3 = {1, 1, 0, -1, -2}; //Output 2
 		int[] arr4 = {5}; // Output 1
-		int[] arr5 = {}; 
+		//int[] arr5 = {}; 
 
 		// Integer to find
-		int missing = 0;
+		int missing;
 
 		// Tests ----------------------------------------------
+                
+                // Solution 2
+                System.out.println("Solution 2 ------------------");
 		missing = sol2.findMissing(arr1, arr1.length);
-		System.out.println(missing);
+		System.out.println("Expect 1: " + missing);
+                missing = sol2.findMissing(arr2, arr2.length);
+		System.out.println("Expect 4: " + missing);
+                missing = sol2.findMissing(arr3, arr3.length);
+		System.out.println("Expect 2: " + missing);
+                missing = sol2.findMissing(arr4, arr4.length);
+		System.out.println("Expect 1: " + missing);
+                /*missing = sol2.findMissing(arr5, arr5.length);
+		System.out.println(missing);*/
+                
+                // Solution 3
+                System.out.println();
+                System.out.println("Solution 3 ------------------");
+                missing = sol2.findMissing(arr1, arr1.length);
+		System.out.println("Expect 1: " + missing);
+                missing = sol2.findMissing(arr2, arr2.length);
+		System.out.println("Expect 4: " + missing);
+                missing = sol2.findMissing(arr3, arr3.length);
+		System.out.println("Expect 2: " + missing);
+                missing = sol2.findMissing(arr4, arr4.length);
+		System.out.println("Expect 1: " + missing);
     }
     
 }

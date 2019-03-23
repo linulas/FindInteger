@@ -61,7 +61,7 @@ public class Solution2 {
     /* Find the smallest positive missing 
 	number in an array that contains 
 	both positive and negative integers */
-    public static int findMissing(int arr[], int size) {
+    public int findMissing(int arr[], int size) {
         // First separate positive and 
         // negative numbers 
         int shift = segregate(arr, size);
